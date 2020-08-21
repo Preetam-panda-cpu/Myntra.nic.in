@@ -1,0 +1,34 @@
+<!----master handlebars file you can inject all assets here ----->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADqUExURQAAANobf5cWJP2ALPQdnPMeju8djq0dOL0jPpgbJft7LJckF88acPdmJfUdm9ZNJaAkJZ4gI60YR/IfivIel/Qel/IfjPhvMPpyKrU+HqIXOO8ek7lEH9FaI6ApGrgZUOkdhvEfivlxMrsZWPJ4KtgbedEcaMoaabUZTfVPF/Iek/p4LN9lJvldU5wXHLxIH8EaXNhRMfQcsv+RLvNVEfwdrPQbsfcctP+ULv+OLvYcruoaPfyEKvsepf+JLfUcpfA7O/t5J/ZhGOwcSLwcKu0cYPdQE+xzKe0cnPAbg/hrLchRIfhQTvRUNo6Ap0EAAAAydFJOUwD9MPT+WIUQBEi7HftE6haT0bkc2sE5Zipt6Ofc+rFybDCA+uG8Psaf27WX5uf7/Y2phayV3gAAAspJREFUWMPtlllzokAUhVExkogLrnGPmn2STFXTbA2ikLhk+/9/Z3o1iGh8nuI+we3uj3PORUpJSiuttP7nKmSVhG62cOr5c+1lWIw3K8MX7fzE8923tzctRqhouNk9iZDtqq/uYqDtCFaGnwv3Ve1mT/CvZRAG2INhtFv91BeuO89ov+dQVa05ATifnYirv46NFcwttfprAFNkUQW619/GUOx7NgOg6S8xFLobC5hL99vW7fVQDLO6xrff7isC1qZ73EQ1YwEAKEDXB/xp5wN8gwFLvGRljprIThHZtHQ/CMDv06cpfY8APtwlgaPpsUnUNmSP9e4GBKCvaY6dNbm2A/edLm5qRxJUyRYAZNfXaQ1wjoW+Q699BgCWejBHpTan58F8wc7rHjbcCfjNQqzWlEMCMkwAML9sfuipWHjil/aXyVatzCEJQoCJnvkh3e90PAF4RkBIODACIQCV274gXF9vWZMyEhKSB3HPBQCjWck5/LFBwN04ucumISTcJ50vqiIB40y64AA9DPmFcyGdGSIFtZgAGMmcb8otSXjwIfSYBGcitWQOAPIoYYZ3QiBqKNIl82AHENKXUne8kqQ0RIzGnXI4QuJAEh5CCEOHOcBHfjwkxDia8UUkj/Et8+BByD34E9wcy0LCbN/DjbGdAZFH50AcQEjmgGdAbG7nYNzsfXR7HG7O8rTxhwBCAgjZDEjltzJ78c/CrUgYNdgSidGhAOjQCOn3RsRoyrcxwBVnm7Mr3sEx+vQ89FiEydtEnXF3RkNou8yxDAmAC4hIoKNKAIgEWAocEPAEoikkAEz6Djz+vCGVawGgI+Dv2yPfGAdQsmn06pFeKccB7Uiz3iOEqFLeLxsIGeXWTrMdriBchZOdZovu3HkSk1Ceyc1xrFl6WK0e2rHmuCnPyvn9X1M939r/hRRKpcr+766Vr6d/otJKK629+gcFK7Wn0A9e6AAAAABJRU5ErkJggg=="
+        sizes="64x64" />
+    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../css/myntra.css">
+</head>
+
+<body>
+  <section id="headerBlock">
+        <article>
+            {{>_navbar}}
+        </article>
+    </section>
+    <aside>{{>_msg}}</aside>
+    <div class="container">
+        {{{body}}}
+    </div>
+   
+    <script src="../../jquery/dist/jquery.js"></script>
+    <script src="../../popper.js/dist/popper.js"></script>
+    <script src="../../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../js/client.js"></script>
+</body>
+
+</html>
